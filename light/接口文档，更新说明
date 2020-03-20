@@ -1,0 +1,31 @@
+接口地址：http://47.254.76.122:8080/light/product/init
+请求方式：get
+接口入参：无
+接口出参：
+[{
+	"productName":"产品名字",
+	"watts":"单个瓦数",
+	"voltage":"单个电压",
+	"minWidth":"最小宽",
+	"minLength":"最小长",
+	"minHeight":"最小高",
+	"unitLength":"单位长度",
+	"minDepth":"深度最小值",
+	"maxDepth":"深度最大值",
+	"linearSpacing":"模组到发光字/灯箱边缘的距离"
+}]
+ 
+
+服务调不通：需要重启tomcat，先连接服务器，然后执行命令：
+cd /usr/local/java/apache-tomcat-7.0.99/bin/
+./shutdown.sh
+./startup.sh
+
+
+
+
+更新excel命令：先连接服务器，然后执行命令：
+cd /usr/local/java
+rm -f light1.xlsx
+rz 然后上传新的excel即可
+注意：excel名字要叫light1.xlsx，格式要和给我的模版一样
